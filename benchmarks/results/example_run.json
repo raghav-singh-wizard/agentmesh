@@ -1,0 +1,33 @@
+{
+  "_note": "This is an illustrative SCHEMA example, not real numbers. Run `make bench` to produce your own results/run_*.json file. The fields shown here are the same ones the benchmark script writes.",
+  "timestamp": "2026-04-21T00:00:00+00:00",
+  "task_count": 50,
+  "aggregates": {
+    "agentmesh": {
+      "n": 50,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_duration_s": 0.0,
+      "avg_tool_calls": 0.0,
+      "total_tokens_in": 0,
+      "total_tokens_out": 0,
+      "by_category": {
+        "math": {"n": 10, "passed": 0},
+        "search": {"n": 15, "passed": 0},
+        "composite": {"n": 10, "passed": 0},
+        "stateful": {"n": 8, "passed": 0},
+        "adversarial": {"n": 7, "passed": 0}
+      }
+    },
+    "baseline": {
+      "n": 50,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "avg_duration_s": 0.0,
+      "avg_tool_calls": 0.0,
+      "total_tokens_in": 0,
+      "total_tokens_out": 0,
+      "by_category": {}
+    }
+  }
+}

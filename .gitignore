@@ -1,0 +1,63 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Testing / Coverage
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+coverage.xml
+*.cover
+
+# Type checking
+.mypy_cache/
+.pyre/
+.ruff_cache/
+
+# Logs
+*.log
+logs/
+
+# Data / local stores
+data/
+*.db
+*.sqlite
+chroma_db/
+.chroma/
+
+# Benchmark artifacts (keep structure, drop runs)
+benchmarks/results/run_*/
+benchmarks/results/*.json
+benchmarks/results/*.csv
+!benchmarks/results/.gitkeep
+!benchmarks/results/example_run.json
+
+# Jupyter
+.ipynb_checkpoints/
