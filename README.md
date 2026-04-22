@@ -184,12 +184,18 @@ like:
 └───────────────┴────┴────────┴───────────┴────────────┴───────────┘
 ```
 
-**Important:** the numbers in your README should come from a run *on your
-machine*. Benchmark results vary with model version, temperature, and even
-time of day (API load → timeouts → retries → different traces). The
-methodology doc explains what to expect (realistically a **1.2×–1.8× pass-rate
-gain** over the baseline, concentrated in the adversarial and composite
-categories) and how to read the JSON report.
+### Results (Claude Sonnet 4.5, 50 tasks, April 2026)
+
+| Agent              | Pass rate  | Avg tool calls | Input tokens |
+|--------------------|------------|----------------|--------------|
+| AgentMesh (full)   | **88.0%**  | 1.56           | 149k         |
+| LangGraph baseline | 40.0%      | 5.34           | 361k         |
+
+**2.20× pass-rate improvement**, strongest on stateful (8/8 vs 1/8) and 
+composite multi-tool (9/10 vs 3/10) tasks. AgentMesh also used **3.4× fewer 
+tool calls** and **2.4× fewer input tokens** per task.
+
+Full per-task results: [`benchmarks/results/full_run.json`](benchmarks/results/full_run.json)
 
 ---
 
