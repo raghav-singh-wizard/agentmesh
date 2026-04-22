@@ -72,8 +72,6 @@ class LangGraphBaseline:
         for schema in self._tools.anthropic_tools():
             name = schema["name"]
             desc = schema["description"]
-            input_schema = schema.get("input_schema", {"type": "object", "properties": {}})
-
             async def _runner(_name: str = name, **kwargs: Any) -> str:
                 res = await self._tools.call(ToolCall(name=_name, arguments=kwargs))
                 return res.content

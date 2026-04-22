@@ -21,11 +21,10 @@ The tasks are designed so they:
 from __future__ import annotations
 
 import re
+from collections.abc import Callable
 from dataclasses import dataclass
-from typing import Callable
 
 from agentmesh.utils.types import Step
-
 
 Grader = Callable[[str, list[Step]], bool]
 

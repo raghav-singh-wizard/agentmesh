@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import asyncio
 import os
-import tempfile
 from collections.abc import Iterator
 from pathlib import Path
 from typing import Any
@@ -17,7 +16,6 @@ os.environ.setdefault("AGENTMESH_LOG_LEVEL", "WARNING")
 
 from agentmesh.llm.anthropic_client import LLMResponse  # noqa: E402
 from agentmesh.utils.types import ToolCall, ToolResult  # noqa: E402
-
 
 # ---------------------------------------------------------------------------
 # Stub LLM — scripted, deterministic, offline

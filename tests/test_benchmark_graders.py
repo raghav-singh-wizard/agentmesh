@@ -6,6 +6,7 @@ keep them quick and cover the edge cases explicitly.
 
 from __future__ import annotations
 
+from agentmesh.utils.types import Step
 from benchmarks.tasks import (
     TASKS,
     both,
@@ -15,7 +16,6 @@ from benchmarks.tasks import (
     tasks_by_category,
     used_tool,
 )
-from agentmesh.utils.types import Step
 
 
 def test_task_count_is_50():

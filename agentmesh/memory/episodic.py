@@ -12,7 +12,6 @@ from __future__ import annotations
 
 import json
 from collections import defaultdict, deque
-from typing import Deque
 
 import redis.asyncio as redis_async
 
@@ -71,7 +70,7 @@ class InMemoryEpisodicMemory:
 
     def __init__(self, max_per_session: int = 200) -> None:
         self._max = max_per_session
-        self._store: dict[str, Deque[MemoryRecord]] = defaultdict(
+        self._store: dict[str, deque[MemoryRecord]] = defaultdict(
             lambda: deque(maxlen=max_per_session)
         )
 

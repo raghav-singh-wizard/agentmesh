@@ -14,7 +14,7 @@ from agentmesh.utils.logging import get_logger
 from agentmesh.utils.types import MemoryRecord
 
 if TYPE_CHECKING:  # pragma: no cover — only for type-checkers
-    import chromadb
+    pass
 
 log = get_logger(__name__)
 

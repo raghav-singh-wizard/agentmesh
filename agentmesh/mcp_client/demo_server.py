@@ -78,7 +78,7 @@ def _safe_eval(expr: str) -> float:
     def _ev(node: ast.AST) -> float:
         if isinstance(node, ast.Expression):
             return _ev(node.body)
-        if isinstance(node, ast.Constant) and isinstance(node.value, (int, float)):
+        if isinstance(node, ast.Constant) and isinstance(node.value, int | float):
             return float(node.value)
         if isinstance(node, ast.BinOp) and type(node.op) in _OPS:
             return _OPS[type(node.op)](_ev(node.left), _ev(node.right))  # type: ignore[operator]

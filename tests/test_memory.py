@@ -12,7 +12,6 @@ from agentmesh.memory.procedural import ProceduralMemory
 from agentmesh.memory.semantic import SemanticMemory
 from agentmesh.utils.types import MemoryRecord, Step
 
-
 # ---------------------- episodic (in-memory variant) ------------------------
 
 

@@ -82,7 +82,7 @@ class Orchestrator:
         cls,
         settings: Settings,
         mcp_servers: list[MCPServerSpec] | None = None,
-    ) -> "Orchestrator":
+    ) -> Orchestrator:
         """Build a production-style orchestrator from env config.
 
         If `mcp_servers` is None, a single `demo` server (the built-in
@@ -175,7 +175,7 @@ class Orchestrator:
         final_answer = ""
         aborted = False
 
-        for step_idx in range(self.max_steps):
+        for _step_idx in range(self.max_steps):
             resp = await self.llm.call(
                 system=system_prompt,
                 messages=messages,

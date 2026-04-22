@@ -13,7 +13,6 @@ from uuid import uuid4
 
 from pydantic import BaseModel, Field
 
-
 StepKind = Literal["plan", "tool_call", "tool_result", "critique", "final", "error"]
 CritiqueVerdict = Literal["accept", "retry", "abort"]
 
