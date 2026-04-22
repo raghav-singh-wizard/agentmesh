@@ -195,8 +195,6 @@ like:
 composite multi-tool (9/10 vs 3/10) tasks. AgentMesh also used **3.4× fewer 
 tool calls** and **2.4× fewer input tokens** per task.
 
-Full per-task results: [`benchmarks/results/full_run.json`](benchmarks/results/full_run.json)
-
 ---
 
 ## Pluggable MCP servers
