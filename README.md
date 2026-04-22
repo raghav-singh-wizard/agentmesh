@@ -61,7 +61,7 @@ and [`docs/BENCHMARKS.md`](docs/BENCHMARKS.md) for the benchmark methodology.
 
 ```bash
 # 1. clone + install
-git clone https://github.com/<you>/agentmesh.git
+git clone https://github.com/raghav-singh-wizard/agentmesh.git
 cd agentmesh
 pip install -r requirements.txt
 pip install -e .
